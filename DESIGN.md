@@ -4,7 +4,7 @@ MapTextSynthesizer is a program to dynamically generate synthetic images contain
 
 ## General Problem & Approach
 
-When trained on a static training dataset of scene text ([MJSynth](http://www.robots.ox.ac.uk/~vgg/data/text/)), a Convolutional Neural Network built by Professor [Jerod Weinman](https://github.com/weinman/cnn_lstm_ctc_ocr) that recognizes text in historical maps has a performance of ________. This is suboptimal, and we believe that accuracy can be improved by using training data that better fits the purpose of the CNN.
+When trained on a static training dataset of scene text ([MJSynth](http://www.robots.ox.ac.uk/~vgg/data/text/)), a Convolutional Neural Network built by Professor [Jerod Weinman](https://github.com/weinman/cnn_lstm_ctc_ocr) that recognizes text in historical maps has a 30% character error rate and a 50% word error rate. This is suboptimal, and we believe that accuracy can be improved by using training data that better fits the purpose of the CNN.
 
 The current, static dataset, MJSynth is gigantic in size (10Gb), which makes distributing and using it cumbersome. By nature, it also has a limited amount of training data, which makes the text recognizer prone to overfitting to the data. Additionally, the data isn’t specifically intended for training a recognizer to read historical maps. The majority of images in the MJSynth dataset do not accurately reflect the population of text styles and background noise in maps.
 
